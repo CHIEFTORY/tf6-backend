@@ -1,17 +1,19 @@
-# the base image
-FROM openjdk:17.0.2-jdk-oracle
-# Establece la variable de entorno para la zona horaria (ajusta según tu necesidad)
-ENV TZ=America/Lima
-# the JAR file path
-ARG JAR_FILE=target/*.jar
+# ========= 1) Build stage =========
+FROM maven:3.9.6-eclipse-temurin-17 AS build
+WORKDIR /app
 
-# Copy the JAR file from the build context into the Docker image
-COPY ${JAR_FILE} backend.jar
+COPY pom.xml .
+COPY src ./src
 
-CMD apt-get update -y
+RUN mvn -DskipTests clean package
 
-# Exponer el puerto HTTP
+
+# ========= 2) Run stage =========
+FROM eclipse-temurin:17-jdk
+WORKDIR /app
+
+COPY --from=build /app/target/*.jar app.jar
+
 EXPOSE 8080
+ENTRYPOINT ["java","-Xmx2048M","-jar","app.jar"]
 
-# Set the default command to run the Java application
-ENTRYPOINT ["java", "-Xmx2048M", "-jar", "/backend.jar"]
