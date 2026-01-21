@@ -1,0 +1,642 @@
+2026-01-20 15:27:44 INFO  com.crud.Tf6JApplication - Starting Tf6JApplication using Java 17.0.15 with PID 2972 (C:\Users\MAURICIO\OneDrive\Documentos\Trabajos Java\TF6new\target\classes started by MAURICIO in C:\Users\MAURICIO\OneDrive\Documentos\Trabajos Java\TF6new)
+2026-01-20 15:27:44 INFO  com.crud.Tf6JApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-20 15:27:44 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-01-20 15:27:44 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-01-20 15:27:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-20 15:27:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 7 JPA repository interfaces.
+2026-01-20 15:27:46 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-20 15:27:46 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-20 15:27:46 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-20 15:27:46 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-01-20 15:27:46 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-20 15:27:46 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1473 ms
+2026-01-20 15:27:46 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-20 15:27:46 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-01-20 15:27:46 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-20 15:27:46 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-20 15:27:47 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-20 15:27:47 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@36ce8641
+2026-01-20 15:27:47 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-20 15:27:47 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-20 15:27:48 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - no existe la relación «asesor», omitiendo
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - no existe la relación «leccion», omitiendo
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - no existe la relación «progreso_curso_usuario», omitiendo
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - no existe la relación «progreso_curso_usuario», omitiendo
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - no existe la relación «ranking», omitiendo
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - no existe la relación «user_roles», omitiendo
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - no existe la relación «user_roles», omitiendo
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - la tabla «asesor» no existe, omitiendo
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - la tabla «curso» no existe, omitiendo
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - la tabla «leccion» no existe, omitiendo
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - la tabla «progreso_curso_usuario» no existe, omitiendo
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - la tabla «ranking» no existe, omitiendo
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - la tabla «roles» no existe, omitiendo
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - la tabla «user_roles» no existe, omitiendo
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:27:48 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - la tabla «users» no existe, omitiendo
+2026-01-20 15:27:48 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-20 15:27:48 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-20 15:27:49 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-01-20 15:27:49 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-20 15:27:49 DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtRequestFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-01-20 15:27:49 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-01-20 15:27:49 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-20 15:27:49 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-20 15:27:49 INFO  com.crud.Tf6JApplication - Started Tf6JApplication in 5.553 seconds (process running for 6.208)
+2026-01-20 15:27:59 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 55 class path changes (0 additions, 54 deletions, 1 modification)
+2026-01-20 15:28:00 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-01-20 15:28:00 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-20 15:28:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-01-20 15:28:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-01-20 15:28:00 INFO  com.crud.Tf6JApplication - Starting Tf6JApplication using Java 17.0.15 with PID 2972 (C:\Users\MAURICIO\OneDrive\Documentos\Trabajos Java\TF6new\target\classes started by MAURICIO in C:\Users\MAURICIO\OneDrive\Documentos\Trabajos Java\TF6new)
+2026-01-20 15:28:00 INFO  com.crud.Tf6JApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-20 15:28:00 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-20 15:28:00 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2026-01-20 15:28:00 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-20 15:28:00 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-20 15:28:00 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-20 15:28:00 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-01-20 15:28:00 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-20 15:28:00 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 335 ms
+2026-01-20 15:28:00 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-20 15:28:00 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-20 15:28:00 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-20 15:28:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-01-20 15:28:00 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@6f25a041
+2026-01-20 15:28:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-01-20 15:28:00 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-20 15:28:00 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-20 15:28:00 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-20 15:28:00 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-20 15:28:01 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: a22bdd39-b729-4fad-a8c8-ee12c1976522
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-20 15:28:01 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-20 15:28:01 DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, DefaultLoginPageGeneratingFilter, DefaultLogoutPageGeneratingFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-01-20 15:28:01 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-01-20 15:28:01 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-20 15:28:01 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-20 15:28:01 INFO  com.crud.Tf6JApplication - Started Tf6JApplication in 0.798 seconds (process running for 17.36)
+2026-01-20 15:28:01 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration matched:
+      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+      - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   UserDetailsServiceAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+      - AnyNestedCondition 1 matched 2 did not; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.PasswordConfigured @ConditionalOnProperty (spring.security.user.password) did not find property 'password'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.NameConfigured @ConditionalOnProperty (spring.security.user.name) did not find property 'name'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.MissingAlternative @ConditionalOnMissingClass did not find unwanted classes 'org.springframework.security.oauth2.client.registration.ClientRegistrationRepository', 'org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector', 'org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository' (UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured)
+      - @ConditionalOnBean (types: org.springframework.security.config.annotation.ObjectPostProcessor; SearchStrategy: all) found bean 'objectPostProcessor'; @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2026-01-20 15:28:03 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2026-01-20 15:28:03 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-01-20 15:28:03 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-20 15:28:03 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-01-20 15:28:03 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-01-20 15:28:03 INFO  com.crud.Tf6JApplication - Starting Tf6JApplication using Java 17.0.15 with PID 2972 (C:\Users\MAURICIO\OneDrive\Documentos\Trabajos Java\TF6new\target\classes started by MAURICIO in C:\Users\MAURICIO\OneDrive\Documentos\Trabajos Java\TF6new)
+2026-01-20 15:28:03 INFO  com.crud.Tf6JApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-20 15:28:04 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-20 15:28:04 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 3 JPA repository interfaces.
+2026-01-20 15:28:04 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-20 15:28:04 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-20 15:28:04 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-20 15:28:04 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-01-20 15:28:04 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-20 15:28:04 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 470 ms
+2026-01-20 15:28:04 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-20 15:28:04 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-20 15:28:04 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-20 15:28:04 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2026-01-20 15:28:04 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@5ca7aa31
+2026-01-20 15:28:04 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2026-01-20 15:28:04 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-20 15:28:04 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - no existe la relación «asesor», omitiendo
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - no existe la relación «leccion», omitiendo
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - no existe la relación «progreso_curso_usuario», omitiendo
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - no existe la relación «progreso_curso_usuario», omitiendo
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - no existe la relación «ranking», omitiendo
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - no existe la relación «user_roles», omitiendo
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - no existe la relación «user_roles», omitiendo
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - la tabla «asesor» no existe, omitiendo
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - la tabla «curso» no existe, omitiendo
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - la tabla «leccion» no existe, omitiendo
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - la tabla «progreso_curso_usuario» no existe, omitiendo
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - la tabla «ranking» no existe, omitiendo
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - la tabla «roles» no existe, omitiendo
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - la tabla «user_roles» no existe, omitiendo
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:04 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - la tabla «users» no existe, omitiendo
+2026-01-20 15:28:04 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-20 15:28:04 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'asesorController': Unsatisfied dependency expressed through field 'asesorService': Error creating bean with name 'asesorService': Unsatisfied dependency expressed through field 'modelMapper': No qualifying bean of type 'org.modelmapper.ModelMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2026-01-20 15:28:04 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-20 15:28:05 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2026-01-20 15:28:05 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2026-01-20 15:28:05 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-01-20 15:28:05 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-01-20 15:28:05 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field modelMapper in com.crud.services.AsesorService required a bean of type 'org.modelmapper.ModelMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.modelmapper.ModelMapper' in your configuration.
+
+2026-01-20 15:28:07 INFO  com.crud.Tf6JApplication - Starting Tf6JApplication using Java 17.0.15 with PID 2972 (C:\Users\MAURICIO\OneDrive\Documentos\Trabajos Java\TF6new\target\classes started by MAURICIO in C:\Users\MAURICIO\OneDrive\Documentos\Trabajos Java\TF6new)
+2026-01-20 15:28:07 INFO  com.crud.Tf6JApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-20 15:28:07 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-20 15:28:07 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 7 JPA repository interfaces.
+2026-01-20 15:28:07 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-20 15:28:07 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-20 15:28:07 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-20 15:28:07 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-01-20 15:28:07 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-20 15:28:07 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 436 ms
+2026-01-20 15:28:08 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-20 15:28:08 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-20 15:28:08 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-20 15:28:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2026-01-20 15:28:08 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@67ab665
+2026-01-20 15:28:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2026-01-20 15:28:08 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-20 15:28:08 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - no existe la relación «asesor», omitiendo
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - no existe la relación «leccion», omitiendo
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - no existe la relación «progreso_curso_usuario», omitiendo
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - no existe la relación «progreso_curso_usuario», omitiendo
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - no existe la relación «ranking», omitiendo
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - no existe la relación «user_roles», omitiendo
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - no existe la relación «user_roles», omitiendo
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - la tabla «asesor» no existe, omitiendo
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - la tabla «curso» no existe, omitiendo
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - la tabla «leccion» no existe, omitiendo
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - la tabla «progreso_curso_usuario» no existe, omitiendo
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - la tabla «ranking» no existe, omitiendo
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - la tabla «roles» no existe, omitiendo
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - la tabla «user_roles» no existe, omitiendo
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-01-20 15:28:08 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - la tabla «users» no existe, omitiendo
+2026-01-20 15:28:08 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-20 15:28:08 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-01-20 15:28:08 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-20 15:28:09 DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtRequestFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-01-20 15:28:09 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-01-20 15:28:09 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-20 15:28:09 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-20 15:28:09 INFO  com.crud.Tf6JApplication - Started Tf6JApplication in 1.645 seconds (process running for 25.439)
+2026-01-20 15:28:09 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.web.SecurityFilterChain' securityFilterChain; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+
+   UserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder; SearchStrategy: all) found beans of type 'org.springframework.security.authentication.AuthenticationManager' authenticationManager and found beans of type 'org.springframework.security.core.userdetails.UserDetailsService' customUserDetailsService (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+         - AnyNestedCondition 1 matched 2 did not; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.PasswordConfigured @ConditionalOnProperty (spring.security.user.password) did not find property 'password'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.NameConfigured @ConditionalOnProperty (spring.security.user.name) did not find property 'name'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.MissingAlternative @ConditionalOnMissingClass did not find unwanted classes 'org.springframework.security.oauth2.client.registration.ClientRegistrationRepository', 'org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector', 'org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository' (UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2026-01-20 15:28:27 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-20 15:28:27 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-20 15:28:27 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-01-20 15:28:27 DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/authenticate
+2026-01-20 15:28:27 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-20 15:28:27 DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/authenticate
+2026-01-20 15:28:27 DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2026-01-20 15:28:38 DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/listarAsesor
+2026-01-20 15:28:38 DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/filtrarProgreso/filterByUsername?username=Mauricio
+2026-01-20 15:28:38 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarAsesor
+2026-01-20 15:28:38 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/filtrarProgreso/filterByUsername?username=Mauricio
+2026-01-20 15:28:38 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarAsesor
+2026-01-20 15:28:38 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.AsesorController.listarAsesor(); target is of class [com.crud.controllers.AsesorController]
+2026-01-20 15:28:38 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/filtrarProgreso/filterByUsername?username=Mauricio
+2026-01-20 15:28:38 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.ProgresoController.listarProgresoByUsername(java.lang.String); target is of class [com.crud.controllers.ProgresoController]
+2026-01-20 15:28:38 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.ProgresoController.listarProgresoByUsername(java.lang.String); target is of class [com.crud.controllers.ProgresoController]
+2026-01-20 15:28:38 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.AsesorController.listarAsesor(); target is of class [com.crud.controllers.AsesorController]
+2026-01-20 15:28:58 DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/listarCurso
+2026-01-20 15:28:58 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 15:28:58 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 15:28:58 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:28:58 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:29:21 DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/authenticate
+2026-01-20 15:29:21 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-20 15:29:21 DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/authenticate
+2026-01-20 15:29:21 DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2026-01-20 15:29:25 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 15:29:25 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 15:29:25 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:29:25 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:31:53 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarAsesor
+2026-01-20 15:31:53 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/filtrarProgreso/filterByUsername?username=Mauricio
+2026-01-20 15:31:53 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarAsesor
+2026-01-20 15:31:53 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.AsesorController.listarAsesor(); target is of class [com.crud.controllers.AsesorController]
+2026-01-20 15:31:53 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.AsesorController.listarAsesor(); target is of class [com.crud.controllers.AsesorController]
+2026-01-20 15:31:53 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/filtrarProgreso/filterByUsername?username=Mauricio
+2026-01-20 15:31:53 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.ProgresoController.listarProgresoByUsername(java.lang.String); target is of class [com.crud.controllers.ProgresoController]
+2026-01-20 15:31:53 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.ProgresoController.listarProgresoByUsername(java.lang.String); target is of class [com.crud.controllers.ProgresoController]
+2026-01-20 15:31:56 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 15:31:56 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 15:31:56 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:31:56 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:33:36 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 15:33:36 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 15:33:36 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:33:36 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:33:44 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/filtrarProgreso/filterByUsername?username=Mauricio
+2026-01-20 15:33:44 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarAsesor
+2026-01-20 15:33:44 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/filtrarProgreso/filterByUsername?username=Mauricio
+2026-01-20 15:33:44 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarAsesor
+2026-01-20 15:33:44 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.ProgresoController.listarProgresoByUsername(java.lang.String); target is of class [com.crud.controllers.ProgresoController]
+2026-01-20 15:33:44 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.ProgresoController.listarProgresoByUsername(java.lang.String); target is of class [com.crud.controllers.ProgresoController]
+2026-01-20 15:33:44 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.AsesorController.listarAsesor(); target is of class [com.crud.controllers.AsesorController]
+2026-01-20 15:33:44 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.AsesorController.listarAsesor(); target is of class [com.crud.controllers.AsesorController]
+2026-01-20 15:33:44 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 15:33:44 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 15:33:44 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:33:44 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:40:56 DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/Listado
+2026-01-20 15:40:56 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/Listado
+2026-01-20 15:40:56 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/Listado
+2026-01-20 15:40:56 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.RankingController.ListadoRanking(); target is of class [com.crud.controllers.RankingController]
+2026-01-20 15:40:56 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.RankingController.ListadoRanking(); target is of class [com.crud.controllers.RankingController]
+2026-01-20 15:40:56 INFO  c.crud.controllers.RankingController - Lista del rank
+2026-01-20 15:40:58 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 15:40:58 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 15:40:58 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:40:58 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:45:09 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/Listado
+2026-01-20 15:45:09 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/Listado
+2026-01-20 15:45:09 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.RankingController.ListadoRanking(); target is of class [com.crud.controllers.RankingController]
+2026-01-20 15:45:09 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.RankingController.ListadoRanking(); target is of class [com.crud.controllers.RankingController]
+2026-01-20 15:45:09 INFO  c.crud.controllers.RankingController - Lista del rank
+2026-01-20 15:45:11 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 15:45:11 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 15:45:11 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:45:11 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:45:14 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarAsesor
+2026-01-20 15:45:14 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarAsesor
+2026-01-20 15:45:14 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/filtrarProgreso/filterByUsername?username=Mauricio
+2026-01-20 15:45:14 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.AsesorController.listarAsesor(); target is of class [com.crud.controllers.AsesorController]
+2026-01-20 15:45:14 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.AsesorController.listarAsesor(); target is of class [com.crud.controllers.AsesorController]
+2026-01-20 15:45:14 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/filtrarProgreso/filterByUsername?username=Mauricio
+2026-01-20 15:45:14 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.ProgresoController.listarProgresoByUsername(java.lang.String); target is of class [com.crud.controllers.ProgresoController]
+2026-01-20 15:45:14 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.ProgresoController.listarProgresoByUsername(java.lang.String); target is of class [com.crud.controllers.ProgresoController]
+2026-01-20 15:45:18 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 15:45:18 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 15:45:18 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:45:18 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:47:03 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/Listado
+2026-01-20 15:47:03 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/Listado
+2026-01-20 15:47:03 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.RankingController.ListadoRanking(); target is of class [com.crud.controllers.RankingController]
+2026-01-20 15:47:03 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.RankingController.ListadoRanking(); target is of class [com.crud.controllers.RankingController]
+2026-01-20 15:47:03 INFO  c.crud.controllers.RankingController - Lista del rank
+2026-01-20 15:47:06 DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/users/1
+2026-01-20 15:47:06 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/users/1
+2026-01-20 15:47:06 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/users/1
+2026-01-20 15:47:06 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.crud.security.controllers.UserController.getUserById(java.lang.Long); target is of class [com.crud.security.controllers.UserController]
+2026-01-20 15:47:06 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.crud.security.controllers.UserController.getUserById(java.lang.Long); target is of class [com.crud.security.controllers.UserController]
+2026-01-20 15:47:07 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 15:47:07 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 15:47:07 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:47:07 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:50:16 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 15:50:16 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 15:50:16 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:50:16 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:50:38 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarAsesor
+2026-01-20 15:50:38 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/filtrarProgreso/filterByUsername?username=Mauricio
+2026-01-20 15:50:38 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarAsesor
+2026-01-20 15:50:38 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.AsesorController.listarAsesor(); target is of class [com.crud.controllers.AsesorController]
+2026-01-20 15:50:38 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.AsesorController.listarAsesor(); target is of class [com.crud.controllers.AsesorController]
+2026-01-20 15:50:38 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/filtrarProgreso/filterByUsername?username=Mauricio
+2026-01-20 15:50:38 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.ProgresoController.listarProgresoByUsername(java.lang.String); target is of class [com.crud.controllers.ProgresoController]
+2026-01-20 15:50:38 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.ProgresoController.listarProgresoByUsername(java.lang.String); target is of class [com.crud.controllers.ProgresoController]
+2026-01-20 15:51:20 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/Listado
+2026-01-20 15:51:20 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/Listado
+2026-01-20 15:51:20 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.RankingController.ListadoRanking(); target is of class [com.crud.controllers.RankingController]
+2026-01-20 15:51:20 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.RankingController.ListadoRanking(); target is of class [com.crud.controllers.RankingController]
+2026-01-20 15:51:20 INFO  c.crud.controllers.RankingController - Lista del rank
+2026-01-20 15:51:53 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/Listado
+2026-01-20 15:51:53 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/Listado
+2026-01-20 15:51:53 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.RankingController.ListadoRanking(); target is of class [com.crud.controllers.RankingController]
+2026-01-20 15:51:53 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.RankingController.ListadoRanking(); target is of class [com.crud.controllers.RankingController]
+2026-01-20 15:51:53 INFO  c.crud.controllers.RankingController - Lista del rank
+2026-01-20 15:51:56 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 15:51:56 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 15:51:56 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:51:56 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:52:24 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 15:52:24 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 15:52:24 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:52:24 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:52:32 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 15:52:32 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 15:52:32 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:52:32 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:52:33 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarAsesor
+2026-01-20 15:52:33 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/filtrarProgreso/filterByUsername?username=Mauricio
+2026-01-20 15:52:33 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/filtrarProgreso/filterByUsername?username=Mauricio
+2026-01-20 15:52:33 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.ProgresoController.listarProgresoByUsername(java.lang.String); target is of class [com.crud.controllers.ProgresoController]
+2026-01-20 15:52:33 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.ProgresoController.listarProgresoByUsername(java.lang.String); target is of class [com.crud.controllers.ProgresoController]
+2026-01-20 15:52:33 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarAsesor
+2026-01-20 15:52:33 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.AsesorController.listarAsesor(); target is of class [com.crud.controllers.AsesorController]
+2026-01-20 15:52:33 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.AsesorController.listarAsesor(); target is of class [com.crud.controllers.AsesorController]
+2026-01-20 15:52:35 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 15:52:35 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 15:52:35 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:52:35 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:53:02 DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/authenticate
+2026-01-20 15:53:02 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-20 15:53:02 DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/authenticate
+2026-01-20 15:53:03 DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2026-01-20 15:53:08 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 15:53:08 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 15:53:08 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:53:08 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:53:14 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 15:53:14 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 15:53:14 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:53:14 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:53:35 DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/authenticate
+2026-01-20 15:53:35 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-20 15:53:35 DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/authenticate
+2026-01-20 15:53:35 DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2026-01-20 15:53:40 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/Listado
+2026-01-20 15:53:40 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/Listado
+2026-01-20 15:53:40 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.RankingController.ListadoRanking(); target is of class [com.crud.controllers.RankingController]
+2026-01-20 15:53:40 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.RankingController.ListadoRanking(); target is of class [com.crud.controllers.RankingController]
+2026-01-20 15:53:40 INFO  c.crud.controllers.RankingController - Lista del rank
+2026-01-20 15:54:00 DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/authenticate
+2026-01-20 15:54:00 DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/authenticate
+2026-01-20 15:54:00 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-20 15:54:00 DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/authenticate
+2026-01-20 15:54:00 DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2026-01-20 15:54:17 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/Listado
+2026-01-20 15:54:17 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/Listado
+2026-01-20 15:54:17 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.RankingController.ListadoRanking(); target is of class [com.crud.controllers.RankingController]
+2026-01-20 15:54:17 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.RankingController.ListadoRanking(); target is of class [com.crud.controllers.RankingController]
+2026-01-20 15:54:17 INFO  c.crud.controllers.RankingController - Lista del rank
+2026-01-20 15:54:18 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 15:54:18 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 15:54:18 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:54:18 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:54:31 DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/registrarProgreso
+2026-01-20 15:54:31 DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/registrarProgreso
+2026-01-20 15:54:31 DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/registrarProgreso
+2026-01-20 15:54:31 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.crud.controllers.ProgresoController.grabarProgreso(com.crud.dtos.ProgresoCursoUsuarioDto); target is of class [com.crud.controllers.ProgresoController]
+2026-01-20 15:54:31 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.crud.controllers.ProgresoController.grabarProgreso(com.crud.dtos.ProgresoCursoUsuarioDto); target is of class [com.crud.controllers.ProgresoController]
+2026-01-20 15:54:36 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/users/1
+2026-01-20 15:54:36 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/users/1
+2026-01-20 15:54:36 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.crud.security.controllers.UserController.getUserById(java.lang.Long); target is of class [com.crud.security.controllers.UserController]
+2026-01-20 15:54:36 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.crud.security.controllers.UserController.getUserById(java.lang.Long); target is of class [com.crud.security.controllers.UserController]
+2026-01-20 15:54:37 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/Listado
+2026-01-20 15:54:37 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/Listado
+2026-01-20 15:54:37 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.RankingController.ListadoRanking(); target is of class [com.crud.controllers.RankingController]
+2026-01-20 15:54:37 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.RankingController.ListadoRanking(); target is of class [com.crud.controllers.RankingController]
+2026-01-20 15:54:37 INFO  c.crud.controllers.RankingController - Lista del rank
+2026-01-20 15:55:21 DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/authenticate
+2026-01-20 15:55:21 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-20 15:55:21 DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/authenticate
+2026-01-20 15:55:22 DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2026-01-20 15:55:30 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 15:55:30 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 15:55:30 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:55:30 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:55:34 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 15:55:34 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 15:55:34 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:55:34 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:55:37 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 15:55:37 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 15:55:37 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:55:37 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:55:43 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 15:55:43 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 15:55:43 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:55:43 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:58:50 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/Listado
+2026-01-20 15:58:50 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/Listado
+2026-01-20 15:58:50 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.RankingController.ListadoRanking(); target is of class [com.crud.controllers.RankingController]
+2026-01-20 15:58:50 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.RankingController.ListadoRanking(); target is of class [com.crud.controllers.RankingController]
+2026-01-20 15:58:50 INFO  c.crud.controllers.RankingController - Lista del rank
+2026-01-20 15:58:51 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 15:58:51 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 15:58:51 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:58:51 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:59:07 DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/listarCurso
+2026-01-20 15:59:07 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 15:59:07 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 15:59:07 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:59:07 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:59:18 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 15:59:18 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 15:59:18 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 15:59:18 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 16:03:47 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 16:03:47 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 16:03:47 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 16:03:47 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 16:04:12 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 16:04:12 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 16:04:12 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 16:04:12 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 16:04:39 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/Listado
+2026-01-20 16:04:39 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/Listado
+2026-01-20 16:04:39 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.RankingController.ListadoRanking(); target is of class [com.crud.controllers.RankingController]
+2026-01-20 16:04:39 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.RankingController.ListadoRanking(); target is of class [com.crud.controllers.RankingController]
+2026-01-20 16:04:39 INFO  c.crud.controllers.RankingController - Lista del rank
+2026-01-20 16:04:40 DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/users/2
+2026-01-20 16:04:40 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/users/2
+2026-01-20 16:04:40 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/users/2
+2026-01-20 16:04:40 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.crud.security.controllers.UserController.getUserById(java.lang.Long); target is of class [com.crud.security.controllers.UserController]
+2026-01-20 16:04:40 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.crud.security.controllers.UserController.getUserById(java.lang.Long); target is of class [com.crud.security.controllers.UserController]
+2026-01-20 16:04:41 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 16:04:41 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 16:04:41 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 16:04:41 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 16:06:55 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 16:06:55 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 16:06:55 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 16:06:55 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 16:07:28 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 16:07:28 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 16:07:28 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 16:07:28 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 16:14:10 DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/Listado
+2026-01-20 16:14:10 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/Listado
+2026-01-20 16:14:10 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/Listado
+2026-01-20 16:14:10 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.RankingController.ListadoRanking(); target is of class [com.crud.controllers.RankingController]
+2026-01-20 16:14:10 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.RankingController.ListadoRanking(); target is of class [com.crud.controllers.RankingController]
+2026-01-20 16:14:10 INFO  c.crud.controllers.RankingController - Lista del rank
+2026-01-20 16:14:11 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/users/2
+2026-01-20 16:14:11 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/users/2
+2026-01-20 16:14:11 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.crud.security.controllers.UserController.getUserById(java.lang.Long); target is of class [com.crud.security.controllers.UserController]
+2026-01-20 16:14:11 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.crud.security.controllers.UserController.getUserById(java.lang.Long); target is of class [com.crud.security.controllers.UserController]
+2026-01-20 16:14:13 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 16:14:13 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 16:14:13 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 16:14:13 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 16:14:22 DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/listarLeccion
+2026-01-20 16:14:22 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarLeccion
+2026-01-20 16:14:22 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarLeccion
+2026-01-20 16:14:22 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.LeccionController.listarLecciones(); target is of class [com.crud.controllers.LeccionController]
+2026-01-20 16:14:22 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.LeccionController.listarLecciones(); target is of class [com.crud.controllers.LeccionController]
+2026-01-20 16:14:35 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 16:14:35 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 16:14:35 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 16:14:35 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 16:14:39 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 16:14:39 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 16:14:39 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 16:14:39 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 16:14:40 DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/listarAsesor
+2026-01-20 16:14:40 DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/filtrarProgreso/filterByUsername?username=admin
+2026-01-20 16:14:40 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/filtrarProgreso/filterByUsername?username=admin
+2026-01-20 16:14:40 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarAsesor
+2026-01-20 16:14:40 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/filtrarProgreso/filterByUsername?username=admin
+2026-01-20 16:14:40 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarAsesor
+2026-01-20 16:14:40 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.ProgresoController.listarProgresoByUsername(java.lang.String); target is of class [com.crud.controllers.ProgresoController]
+2026-01-20 16:14:40 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.ProgresoController.listarProgresoByUsername(java.lang.String); target is of class [com.crud.controllers.ProgresoController]
+2026-01-20 16:14:40 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.AsesorController.listarAsesor(); target is of class [com.crud.controllers.AsesorController]
+2026-01-20 16:14:40 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.AsesorController.listarAsesor(); target is of class [com.crud.controllers.AsesorController]
+2026-01-20 16:14:49 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarCurso
+2026-01-20 16:14:49 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarCurso
+2026-01-20 16:14:49 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 16:14:49 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.CursoController.listarCurso(); target is of class [com.crud.controllers.CursoController]
+2026-01-20 16:14:57 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/listarAsesor
+2026-01-20 16:14:57 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/filtrarProgreso/filterByUsername?username=admin
+2026-01-20 16:14:57 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/listarAsesor
+2026-01-20 16:14:57 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.AsesorController.listarAsesor(); target is of class [com.crud.controllers.AsesorController]
+2026-01-20 16:14:57 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.AsesorController.listarAsesor(); target is of class [com.crud.controllers.AsesorController]
+2026-01-20 16:14:57 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/filtrarProgreso/filterByUsername?username=admin
+2026-01-20 16:14:57 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.ProgresoController.listarProgresoByUsername(java.lang.String); target is of class [com.crud.controllers.ProgresoController]
+2026-01-20 16:14:57 DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.crud.controllers.ProgresoController.listarProgresoByUsername(java.lang.String); target is of class [com.crud.controllers.ProgresoController]
+2026-01-20 16:15:15 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-20 16:15:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2026-01-20 16:15:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
