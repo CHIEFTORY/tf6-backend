@@ -35,6 +35,6 @@ Este backend usa autenticación basada en **JWT (JSON Web Token)**.
 #### Request JSON
 ```json
 {
-  "username": "admin",
+  "username": "Mauricio",
   "password": "123456"
 }
